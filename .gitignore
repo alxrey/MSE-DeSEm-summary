@@ -253,3 +253,9 @@ TSWLatexianTemp*
 
 # standalone packages
 *.sta
+LaTex/__latexindent_temp.tex
+LaTex/cpp.pdf
+LaTex/hal.pdf
+LaTex/introduction.pdf
+LaTex/patterns.pdf
+LaTex/xf_ss.pdf
