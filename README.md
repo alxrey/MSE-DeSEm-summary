@@ -1,8 +1,12 @@
 # Résumé DeSem 2021
 
+- Date      : 24 janvier 2022
+- Durée     : 120 minutes
+- Heure     : 08h45
+- Salle     : A7
+  
 ## Modalités
 
-- Open-book ?
 
 ### Contenu
 
@@ -52,3 +56,23 @@
    2) Architecture
    3) TDMA
    4) Frames
+
+
+### Exercice
+
+- [ ] Layered communication architecture
+    - [ ] Ex. 1
+    - [ ] Ex. 2
+- [ ] C++ Primer
+    - [ ]  Ex. 1
+- [ ] Advanced C++ and UML Introduction
+    - [ ] Ex. 2
+- [ ] Design Pattern
+    - [ ] Ex. 3
+- [ ] Implementation Patterns
+    - [ ] Ex. 4
+- [ ] HAL project
+    - [ ] HAL Exercice
+- [ ] DeseNET protocol
+    - [ ]  Exercise on DeseNET protocol analysis
+- [ ] Ancien Examen
