@@ -1,0 +1,36 @@
+@startuml appNw
+
+namespace App {
+    class NWClient {
+        + data_indication(d: Data): void
+        + data_confirmation(): void
+        + connectConf(): void
+        + ...
+        - ...
+    }
+    class Data {
+        -payload: Byte
+    }
+}
+
+namespace Nw {
+    class Network {
+        + data_request(d: Data): void
+        + data_response(address: Byte): void
+        + receive(m: Message): void
+    }
+    class Message {
+        - from: Byte
+        - to: Byte
+    }
+}
+
+
+App.NWClient o--> "*" Nw.Network: -netClient
+App.NWClient "*" <--o Nw.Network: -net
+App.NWClient .> App.Data: <<uses>>
+Nw.Network ..> App.Data: <<uses>>
+Nw.Message <. Nw.Network: <<uses>>
+Nw.Message o--> "*" App.Data
+
+@enduml

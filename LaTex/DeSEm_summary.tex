@@ -1,0 +1,37 @@
+\documentclass[a4paper, 11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[a4paper, margin=1.5cm]{geometry}
+\usepackage{multicol}
+\usepackage{subfiles}
+\usepackage{float}
+\usepackage{physics}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\usepackage{siunitx}
+\usepackage{titlesec}
+\input{listings.tex}
+
+\setlength{\parindent}{0pt} % paragraph indentation on first line
+\setlist[itemize]{leftmargin=*}
+
+% color section header
+\titleformat{\section}
+{\color{BrickRed}\normalfont\Large\bfseries}
+{\color{BrickRed}\thesection}{1em}{}
+
+% -- begin document --
+\begin{document}
+\begin{multicols}{2}
+\subfile{sections/OSI_model}
+\subfile{sections/cpp}
+\subfile{sections/patterns}
+\subfile{sections/xf_ss}
+\subfile{sections/hal}
+\end{multicols}
+\subfile{sections/big_stuff}
+\end{document}

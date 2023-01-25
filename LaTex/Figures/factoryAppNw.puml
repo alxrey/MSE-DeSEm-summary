@@ -1,0 +1,23 @@
+@startuml factoryAppNw
+
+class NWClient {
+    + initialize(): void
+    + initializeRelations(): void
+}
+
+class Network {
+    + initialize(): void
+    + initializeRelations(): void
+}
+
+class Factory {
+    + getNWC1(): NWClient
+    + getNWCn(): NWClient
+    + getNw1(): Network
+    + buildSystem(): void
+}
+
+Factory *-> Network: -theNW
+Factory *--> "1..n" NWClient: -theNWC
+
+@enduml
